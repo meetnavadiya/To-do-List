@@ -3,9 +3,10 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
+
 }
 .container {
-  max-width: 600px;
+  width: 500px;
   margin: 0 auto;
   background: #fff;
   padding: 20px;
@@ -62,7 +63,7 @@ button:hover {
 }
 
 .search-bar{
-  width: 500%;
+  width: 500px;
 }
 
 .btn{

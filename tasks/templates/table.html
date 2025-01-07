@@ -1,0 +1,25 @@
+{% include 'main.html' %}
+
+{% block content %}
+<div>
+    <table class="table table-striped">
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+            <!-- <td>Action</td> -->
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td><a href="{% url 'view' i.id %}">{{ i.tname }}</a></td>
+            <td><p>{{ i.tdesc }}</p>
+           
+        </tr>
+        {% endfor %}
+    </table>
+    
+    
+
+    
+  
+
+{% endblock %}

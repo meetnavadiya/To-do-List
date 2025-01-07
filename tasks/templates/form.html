@@ -4,25 +4,25 @@
     <form action="" method="POST">
         {% csrf_token %}
 
-      <input type="text" name="name" placeholder="Task Name" required value="{{ task.tname }}" />
-      <input type="text" name="desc" placeholder="Description Name" required value="{{ task.tdesc }}" />
+      <input  type="text" name="name" placeholder="Task Name" required value="{{ data.tname }}" />
+      <input type="text" name="desc" placeholder="Description Name" required value="{{ data.tdesc }}" />
       <!-- <input type="date"> -->
       <button type="submit" style="background: rgb(60, 122, 192);">Add Task</button>
     </form><br>
     
-    <div class="search-bar">
+    <!-- <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search tasks...">
         <button id="searchButton" style="background: rgb(60, 122, 192);">Search</button>      
       </div><br>
       
-    <div class="filter-buttons">
+    <div class="filter-buttons"> -->
       
       
-      <button id="showAll" class="btn btn-secondary">All</button>
+      <!-- <button id="showAll" class="btn btn-secondary">All</button>
       <button id="showPending" type="button" class="btn btn-warning">completed</button>
       <button id="showPending" type="button" class="btn btn-danger">Pending</button>
     </div><br><hr>
-    <div class="task-list" id="taskList">
+    <div class="task-list" id="taskList"> -->
       <!-- Tasks will be displayed here --> 
     </div>
 
