@@ -22,10 +22,11 @@ def view(request,pk):
     
     return render(request,'view.html',{'data':tasks})
 
-def table(request):
-      
-    tasks=Task.objects.all()
 
+def table(request):
+
+    query=request.GET.get('q','')
+    tasks=Task.objects.filter(tname__icontains=query)
     return render(request,'table.html',{'data':tasks})
    
 
