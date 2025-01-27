@@ -14,16 +14,11 @@
                 </div>
             </form>  
 </div> <br>
-
-
-
-
     <table class="table table-striped">
         <tr>
             <big>
                 <td>Name</td>
                 <td>Description</td>
-                
             </big>
             
         </tr>
@@ -31,7 +26,6 @@
         <tr>
             <td><a href="{% url 'view' i.id %}">{{ i.tname }}</a></td>
             <td><p>{{ i.tdesc }}</p>
-            
         </tr>
         {% endfor %}
     </table>
