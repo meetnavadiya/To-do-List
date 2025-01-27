@@ -30,8 +30,8 @@ def table(request):
     return render(request,'table.html',{'data':tasks})
    
 
-def update_task(request,pk):
-    task=Task.objects.get(id=pk)
+def update_task(request,id):
+    task=Task.objects.get(id=id)
     if request.method == 'POST':
         name = request.POST.get('name')
         desc = request.POST.get('desc')
